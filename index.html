@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | CSFS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Poppins:300,400,700|Roboto+Slab:400,700&display=swap"
+        rel="stylesheet">
+        
+    
+</head>
+<body class="home">
+    <div class="header">
+        <!-- NAV WIDGET -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+        
+                <span class="navigation__icon">&nbsp;</span>
+                
+            </label>
+        
+            <div class="navigation__background">&nbsp;</div>
+        
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+        
+                    <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT</a></li>
+                    <li class="navigation__item"><a href="events.html" class="navigation__link">EVENTS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- NAV BAR-->
+        <nav>
+            <div class="nav">
+                <ul class="list">
+                    <li id="item-logo">
+                        <a href="index.html" class="logo-link">
+                            <div class="logo-box">
+                                <img src="/assets/csfs-white.svg" alt="Logo" class="logo">
+                            </div>
+                        </a>
+                    </li>
+                    <div class="navs">
+                        <li class="item"><a href="about.html" class="link">About</a></li>
+                        <li class="item"><a href="events.html" class="link">Events</a></li>
+                    </div>
+        
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="block-carousel">
+                <div class="carousel ">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="text"><span class="title"><q>&nbsp;Cyber Security<br> <span class="u-padding-left">and
+                                            Forensic
+                                            Squad</span>&nbsp;</q></span></div>
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <div class="text"><span class="title"><q>&nbsp;Alerting today<br><span class="u-padding-left">for a
+                                            safer
+                                            tomorrow</span> &nbsp;</q></span></div>
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <div class="text"><span class="title"><q>&nbsp;Only the insecure<br><span
+                                            class="u-padding-left">strive for
+                                            security</span>&nbsp;</q></span></div>
+                        </div>
+        
+        
+                    </div>
+                    <div class="dot-box">
+                        <div style="">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+        
+        
+                </div>
+                <div class="buttons">
+                    <a href="#popup-join" class="btn btn-white">JOIN US</a>
+                    <a href="#popup-contact" class="btn btn-white">CONTACT US</a>
+                </div>
+            </div>
+        
+        
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+        
+            <div class="illus-box">
+                <img src="/assets/pink.svg" alt="Logo" class="illus">
+            </div>
+        
+        
+        
+            <div class="popup" id="popup-join">
+                <div class="popup__content">
+        
+                    <div class="book">
+                        <div class="book__form">
+                            <a href="#" class="popup__close">&times;</a>
+                            <form action="https://getform.io/f/f13d95c7-ab25-4349-8e16-894a4ca38f87" target="_blank" method="POST" class="form">
+                                <div class="heading-form">
+                                    <h2 class="heading-secondary">
+                                        Join Us
+                                    </h2>
+                                </div>
+                                <div class="form__group">
+                                    <input id="name" type="text" name="name" class="form__input" placeholder="Full Name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+        
+                                <div class="form__group">
+                                    <input id="email" name="_emailid" type="email" class="form__input" placeholder="Email Address" required>
+                                    <label for="email" class="form__label">Email Address</label>
+                                </div>
+        
+                                <div class="form__group">
+                                    <button class="btn-special btn-special--green">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popup" id="popup-contact">
+                <div class="popup__content">
+                    <div class="book book-contact">
+                        <div class="book__form">
+                            <a href="#" class="popup__close-c">&times;</a>
+                            <div class="mail-box">
+                                <div class="mail-icon">
+        
+                                    <img src="/assets/mail.svg" alt="MAIL" class="mail-icon">
+        
+                                </div>
+                            </div>
+        
+                            <h2 class="heading-secondary-c h-center">
+                                Contact Us
+                            </h2>
+                            <h2 class="heading-secondary-c h-center">
+                                <a href="mailto:help.csfs@gmail.com">help.csfs@gmail.com</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </main>
+    </div>
+ 
+    <footer class="footer">
+        <p class="copyright">&copy; Copyright
+            <script>
+                                var theDate=new Date();
+                                document.write(theDate.getFullYear())
+                             </script>
+            <span>Made and Designed by <a href="https://chintankamani.github.io/" class="name" target="_blank">Chintan
+                    Kamani</a></span>
+        </p>
+    </footer>
+
+   
+
+</body>
+
+</html>
